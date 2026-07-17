@@ -6,6 +6,7 @@
   <title>Detalle de Producto — ReUse Market</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <script>tailwind.config={theme:{extend:{colors:{eco:{DEFAULT:'#2d6a4f',light:'#40916c',dark:'#1b4332'},verde:{50:'#f0fdf4',100:'#dcfce7',400:'#4ade80',500:'#22c55e',600:'#16a34a'}},fontFamily:{sans:['Inter','sans-serif']}}}}</script>
   <style>
     .card-hover{transition:transform 0.3s ease,box-shadow 0.3s ease}.card-hover:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,0.12)}
@@ -19,7 +20,7 @@
 <!-- NAVBAR -->
 <nav class="bg-eco-dark text-white sticky top-0 z-50 shadow-lg">
   <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-    <a href="index.html" class="text-xl font-bold flex items-center gap-2"><span class="text-verde-400 text-2xl">♻</span> ReUse Market</a>
+    <a href="index.html" class="text-xl font-bold flex items-center gap-2"><i class="fa-solid fa-recycle text-verde-400 text-2xl"></i> ReUse Market</a>
     <div class="hidden md:flex items-center gap-6 text-sm font-medium">
       <a href="index.html" class="text-white/80 hover:text-verde-400 transition-colors">Inicio</a>
       <a href="catalogo.html" class="text-white/80 hover:text-verde-400 transition-colors">Catálogo</a>
@@ -47,10 +48,10 @@
         <span class="text-9xl">📱</span>
       </div>
       <div class="grid grid-cols-4 gap-3">
-        <div class="thumb activo bg-gray-100 rounded-2xl h-20 flex items-center justify-center text-3xl">📱</div>
-        <div class="thumb bg-gray-100 rounded-2xl h-20 flex items-center justify-center text-3xl">🔋</div>
-        <div class="thumb bg-gray-100 rounded-2xl h-20 flex items-center justify-center text-3xl">📦</div>
-        <div class="thumb bg-gray-100 rounded-2xl h-20 flex items-center justify-center text-3xl">🔌</div>
+        <div class="thumb activo bg-gray-100 rounded-2xl h-20 flex items-center justify-content-center"><i class="fa-solid fa-mobile-screen-button text-2xl text-eco"></i></div>
+        <div class="thumb bg-gray-100 rounded-2xl h-20 flex items-center justify-center"><i class="fa-solid fa-battery-full text-2xl text-gray-400"></i></div>
+        <div class="thumb bg-gray-100 rounded-2xl h-20 flex items-center justify-center"><i class="fa-solid fa-box text-2xl text-gray-400"></i></div>
+        <div class="thumb bg-gray-100 rounded-2xl h-20 flex items-center justify-center"><i class="fa-solid fa-plug text-2xl text-gray-400"></i></div>
       </div>
     </div>
 
@@ -92,10 +93,10 @@
       <!-- Acciones -->
       <div class="flex flex-col sm:flex-row gap-3 mb-6">
         <a href="carrito.html" class="flex-1 bg-eco hover:bg-eco-dark text-white font-bold py-3 rounded-full text-center transition-all duration-300 hover:-translate-y-1 shadow-lg">
-          🛒 Agregar al carrito
+          <i class="fa-solid fa-cart-plus"></i> Agregar al carrito
         </a>
         <button class="flex-1 border-2 border-eco text-eco hover:bg-eco hover:text-white font-bold py-3 rounded-full transition-all duration-300 hover:-translate-y-1">
-          💬 Contactar vendedor
+          <i class="fa-regular fa-comment"></i> Contactar vendedor
         </button>
       </div>
 
@@ -127,7 +128,7 @@
       </ul>
     </div>
     <div class="bg-verde-50 rounded-3xl p-6">
-      <h3 class="font-bold text-eco mb-4">🌿 Impacto ambiental de esta compra</h3>
+      <h3 class="font-bold text-eco mb-4"><i class="fa-solid fa-leaf"></i> Impacto ambiental de esta compra</h3>
       <p class="text-gray-600 text-sm leading-relaxed">Al comprar este teléfono reacondicionado en lugar de uno nuevo, estás evitando la emisión de aproximadamente <strong class="text-eco">70 kg de CO₂</strong> y el uso de <strong class="text-eco">8,000 litros de agua</strong> necesarios para fabricar un dispositivo nuevo.</p>
       <div class="mt-4 flex gap-4 text-center">
         <div><div class="text-2xl font-extrabold text-eco">70kg</div><div class="text-xs text-gray-500">CO₂ evitado</div></div>
@@ -163,7 +164,7 @@
 <!-- FOOTER -->
 <footer class="bg-eco-dark text-white py-8 mt-12">
   <div class="max-w-7xl mx-auto px-4 text-center text-white/50 text-sm">
-    <div class="text-xl font-extrabold text-verde-400 mb-2">♻ ReUse Market</div>
+    <div class="text-xl font-extrabold text-verde-400 mb-2"><i class="fa-solid fa-recycle"></i> ReUse Market</div>
     <p>© 2026 ReUse Market. Marketplace de economía circular.</p>
   </div>
 </footer>
